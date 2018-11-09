@@ -34,7 +34,7 @@ public class Todo extends HttpServlet {
         String item = httpServletRequest.getParameter("afaire");
         String[] checkbox = httpServletRequest.getParameterValues("global");
 
-        // On vérifie l'état de ka checkbox (cochée = global / non cochée = session)
+        // On vérifie l'état de la checkbox (cochée = global / non cochée = session)
         if (checkbox == null) {
             // On ajoute l'item dans la session et SEULEMENT dans la session
             todoSession.add(item);
