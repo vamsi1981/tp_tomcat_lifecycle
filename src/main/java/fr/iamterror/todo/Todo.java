@@ -86,4 +86,8 @@ public class Todo extends HttpServlet {
     public void init() throws ServletException {
         super.init();
     }
+    @Override
+    public void destroy() {
+        System.out.printlnln(".........destroy method invoked.......");
+    }
 }
